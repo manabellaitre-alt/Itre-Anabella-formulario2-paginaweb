@@ -1,0 +1,831 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #202020;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d33b3b;
+}
+
+.boton-nav {
+    background-color: #b92020;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+.boton-nav:hover {
+    background-color: #8f1515;
+    color: white;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+    background-color: #b92020;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton:hover {
+    background-color: #8f1515;
+}
+
+.boton-secundario {
+    display: inline-block;
+    color: #b92020;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.boton-secundario:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.texto-pequeno {
+    color: #b92020;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+h2 {
+    line-height: 1.2;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)),
+        url("img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 650px;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+}
+
+.hero p:not(.texto-pequeno) {
+    max-width: 580px;
+    color: #dddddd;
+}
+
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.introduccion {
+    padding: 90px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: white;
+}
+
+.introduccion div {
+    max-width: 500px;
+}
+
+.introduccion h2 {
+    font-size: 36px;
+}
+
+.introduccion > p {
+    max-width: 500px;
+    color: #555555;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.categorias {
+    padding: 90px 7%;
+}
+
+.titulo-seccion {
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+    font-size: 36px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    text-decoration: none;
+    color: #202020;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-tarjeta {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.deportivo {
+    background-image: url("img/tarjetadeportivo.png");
+}
+
+.suv {
+    background-image: url("img/tarjetasuv.jpg");
+}
+
+.sedan {
+    background-image: url("img/tarjetasedan.jpg");
+}
+
+.tarjeta-contenido {
+    padding: 25px;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-contenido p {
+    color: #666666;
+}
+
+
+/* =========================
+   DESTACADO
+========================= */
+
+.destacado {
+    background-color: #171717;
+    color: white;
+    display: flex;
+    align-items: stretch;
+}
+
+.destacado-imagen {
+    width: 50%;
+}
+
+.destacado-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+}
+
+.destacado-texto {
+    width: 50%;
+    padding: 80px 7%;
+}
+
+.destacado-texto h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.destacado-texto p:not(.texto-pequeno) {
+    color: #cccccc;
+}
+
+
+/* =========================
+   LLAMADA A LA ACCIÓN
+========================= */
+
+.llamada {
+    text-align: center;
+    padding: 90px 7%;
+    background-color: white;
+}
+
+.llamada h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.llamada p {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+}
+
+
+/* =========================
+   TÍTULOS DE PÁGINA
+========================= */
+
+.titulo-pagina {
+    text-align: center;
+    padding: 100px 7%;
+    background-color: #171717;
+    color: white;
+}
+
+.titulo-pagina h1 {
+    max-width: 850px;
+    margin: auto;
+}
+
+.titulo-pagina p:last-child {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #cccccc;
+}
+
+
+/* =========================
+   AUTOS
+========================= */
+
+.lista-autos {
+    padding: 80px 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.auto-card {
+    background-color: white;
+    display: flex;
+    min-height: 300px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.auto-card img {
+    width: 42%;
+    object-fit: cover;
+}
+
+.auto-card div {
+    padding: 40px;
+}
+
+.auto-card span {
+    color: #b92020;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.auto-card h2 {
+    margin: 10px 0 15px;
+}
+
+.auto-card p {
+    color: #666666;
+}
+
+.auto-card a {
+    display: inline-block;
+    color: #b92020;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categoria-header {
+    min-height: 450px;
+    padding: 100px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.deportivo-header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("img/deportivo2.jpg");
+}
+
+.suv-header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("img/suv2.jpg");
+}
+
+.sedan-header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("img/sedan2.jpg");
+}
+
+.categoria-header h1 {
+    margin-bottom: 20px;
+}
+
+.categoria-header p:last-child {
+    max-width: 650px;
+    color: #dddddd;
+}
+
+.contenido-categoria {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 7%;
+    background-color: white;
+}
+
+.categoria-texto {
+    flex: 1;
+}
+
+.categoria-texto h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.categoria-texto p {
+    color: #5e5e5e;
+    margin-bottom: 15px;
+}
+
+.categoria-imagen {
+    flex: 1;
+}
+
+.categoria-imagen img {
+    width: 100%;
+    display: block;
+}
+
+.caracteristicas {
+    padding: 90px 7%;
+}
+
+.caracteristicas > h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+.caracteristicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.caracteristicas-grid div {
+    background-color: white;
+    padding: 30px;
+    border-top: 3px solid #b92020;
+}
+
+.caracteristicas-grid h3 {
+    margin-bottom: 12px;
+}
+
+.caracteristicas-grid p {
+    color: #666666;
+}
+
+
+/* =========================
+   ASESORAMIENTO
+========================= */
+
+.pasos {
+    padding: 90px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.paso {
+    background-color: white;
+    padding: 35px;
+    border-left: 4px solid #b92020;
+}
+
+.paso span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #b92020;
+}
+
+.paso h2 {
+    margin: 15px 0;
+}
+
+.paso p {
+    color: #666666;
+}
+
+.asesoramiento-imagen {
+    display: flex;
+    background-color: #171717;
+    color: white;
+}
+
+.asesoramiento-imagen img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.asesoramiento-imagen div {
+    width: 50%;
+    padding: 80px 7%;
+}
+
+.asesoramiento-imagen h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.asesoramiento-imagen p:last-child {
+    color: #cccccc;
+}
+
+.checklist {
+    padding: 80px 7%;
+    background-color: white;
+}
+
+.checklist h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checklist ul {
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style: none;
+}
+
+.checklist li {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 3px solid #b92020;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 7%;
+    background-color: white;
+}
+
+.nosotros-texto {
+    flex: 1;
+}
+
+.nosotros-texto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+    color: #5f5f5f;
+    margin-bottom: 15px;
+}
+
+.nosotros-imagen {
+    flex: 1;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+}
+
+.valores {
+    padding: 90px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.valores div {
+    padding: 30px;
+    background-color: white;
+}
+
+.valores h3 {
+    margin-bottom: 10px;
+}
+
+.valores p {
+    color: #666666;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-contenedor {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+form {
+    background-color: white;
+    padding: 45px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #dddddd;
+    padding-top: 30px;
+    margin-bottom: 35px;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #b92020;
+}
+
+.preferencias {
+    margin-top: 15px;
+}
+
+.preferencias p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.preferencias label {
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.terminos {
+    margin-bottom: 25px;
+}
+
+.terminos label {
+    font-size: 14px;
+}
+
+.boton-formulario {
+    margin-top: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 60px 7% 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+footer a {
+    display: block;
+    color: #aaaaaa;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .tarjetas,
+    .caracteristicas-grid,
+    .pasos,
+    .valores {
+        grid-template-columns: 1fr;
+    }
+
+    .introduccion {
+        flex-direction: column;
+    }
+
+    .destacado,
+    .contenido-categoria,
+    .nosotros,
+    .asesoramiento-imagen {
+        flex-direction: column;
+    }
+
+    .destacado-imagen,
+    .destacado-texto,
+    .categoria-imagen,
+    .categoria-texto,
+    .nosotros-imagen,
+    .nosotros-texto,
+    .asesoramiento-imagen img,
+    .asesoramiento-imagen div {
+        width: 100%;
+    }
+
+    .auto-card {
+        flex-direction: column;
+    }
+
+    .auto-card img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checklist ul {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        grid-column: auto;
+    }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consulta | AutoGuide</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">AUTOGUIDE</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="autos.html">Autos</a></li>
+                <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="formulario.html" class="boton-nav">Consultar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="titulo-pagina">
+
+            <p class="texto-pequeno">CONSULTA PERSONALIZADA</p>
+
+            <h1>Contanos qué auto estás buscando.</h1>
+
+            <p>
+                Completá los siguientes datos para conocer mejor
+                tus necesidades y preferencias.
+            </p>
+
+        </section>
+
+
+        <section class="formulario-contenedor">
+
+            <form action="#" method="post">
+
+
+                <fieldset>
+
+                    <legend>Datos personales</legend>
+
+                    <div class="form-grid">
+
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Vehículo que estás buscando</legend>
+
+                    <div class="form-grid">
+
+                        <div class="campo">
+
+                            <label for="tipo">Tipo de vehículo</label>
+
+                            <select id="tipo" name="tipo">
+
+                                <option value="">Seleccionar</option>
+                                <option value="sedan">Sedán</option>
+                                <option value="suv">SUV</option>
+                                <option value="deportivo">Deportivo</option>
+                                <option value="hatchback">Hatchback</option>
+                                <option value="pickup">Pickup</option>
+                                <option value="otro">Otro</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="marca">Marca preferida</label>
+
+                            <select id="marca" name="marca">
+
+                                <option value="">Seleccionar</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="ford">Ford</option>
+                                <option value="volkswagen">Volkswagen</option>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="honda">Honda</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes-Benz</option>
+                                <option value="otra">Otra</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="anio">Año aproximado</label>
+
+                            <select id="anio" name="anio">
+
+                                <option value="">Seleccionar</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="anterior">Anterior</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="presupuesto">Presupuesto aproximado</label>
+
+                            <select id="presupuesto" name="presupuesto">
+
+                                <option value="">Seleccionar</option>
+                                <option value="bajo">Hasta $20.000.000</option>
+                                <option value="medio">$20.000.000 - $35.000.000</option>
+                                <option value="alto">$35.000.000 - $50.000.000</option>
+                                <option value="superior">Más de $50.000.000</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Preferencias</legend>
+
+                    <div class="form-grid">
+
+                        <div class="campo">
+
+                            <label for="combustible">Combustible</label>
+
+                            <select id="combustible" name="combustible">
+
+                                <option value="">Seleccionar</option>
+                                <option value="nafta">Nafta</option>
+                                <option value="diesel">Diésel</option>
+                                <option value="hibrido">Híbrido</option>
+                                <option value="electrico">Eléctrico</option>
+                                <option value="indiferente">Indiferente</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="transmision">Transmisión</label>
+
+                            <select id="transmision" name="transmision">
+
+                                <option value="">Seleccionar</option>
+                                <option value="manual">Manual</option>
+                                <option value="automatica">Automática</option>
+                                <option value="indiferente">Indiferente</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="uso">Uso principal</label>
+
+                            <select id="uso" name="uso">
+
+                                <option value="">Seleccionar</option>
+                                <option value="ciudad">Ciudad</option>
+                                <option value="viajes">Viajes</option>
+                                <option value="familia">Uso familiar</option>
+                                <option value="trabajo">Trabajo</option>
+                                <option value="mixto">Uso mixto</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="ocupantes">Cantidad habitual de pasajeros</label>
+
+                            <input type="number" id="ocupantes" name="ocupantes" min="1" max="10">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="preferencias">
+
+                        <p>¿Qué características te interesan?</p>
+
+                        <label>
+                            <input type="checkbox" name="caracteristicas" value="seguridad">
+                            Seguridad
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="caracteristicas" value="tecnologia">
+                            Tecnología
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="caracteristicas" value="consumo">
+                            Bajo consumo
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="caracteristicas" value="espacio">
+                            Espacio interior
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="caracteristicas" value="rendimiento">
+                            Rendimiento
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Información adicional</legend>
+
+                    <div class="campo">
+
+                        <label for="actual">
+                            ¿Actualmente tenés algún vehículo?
+                        </label>
+
+                        <input type="text" id="actual" name="actual"
+                            placeholder="Ej.: Volkswagen Golf 2018">
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensaje">Contanos qué estás buscando</label>
+
+                        <textarea id="mensaje" name="mensaje" rows="6"
+                            placeholder="Escribí cualquier información que consideres importante..."></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="contacto">¿Cómo preferís que te contactemos?</label>
+
+                        <select id="contacto" name="contacto">
+
+                            <option value="">Seleccionar</option>
+                            <option value="email">Correo electrónico</option>
+                            <option value="telefono">Teléfono</option>
+
+                        </select>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="terminos">
+
+                    <label>
+                        <input type="checkbox" name="terminos" required>
+                        Acepto el envío de la información y los términos
+                        del formulario.
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="boton boton-formulario">
+                    Enviar consulta
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            <h3>AUTOGUIDE</h3>
+            <p>Información y asesoramiento automotor.</p>
+        </div>
+
+        <div>
+            <h4>Navegación</h4>
+            <a href="index.html">Inicio</a>
+            <a href="autos.html">Autos</a>
+            <a href="asesoramiento.html">Asesoramiento</a>
+            <a href="formulario.html">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Contacto</h4>
+            <p>Buenos Aires, Argentina</p>
+            <p>info@autoguide.com</p>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 AutoGuide. Sitio educativo.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
