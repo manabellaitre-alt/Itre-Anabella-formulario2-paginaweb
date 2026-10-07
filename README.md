@@ -1,279 +1,37 @@
 ﻿# Itre-Anabella-formulario2-paginaweb
 # 🚗 AUTOGUIDE
 
-> **Sitio web de información y asesoramiento para la elección de automóviles.**
+> Sitio web de información y asesoramiento para la elección de automóviles.
 
----
+## 📌 Descripción
 
-## 📌 Descripción del proyecto
+**AUTOGUIDE** es un proyecto académico de desarrollo web creado para brindar información sobre diferentes tipos de vehículos y orientar al usuario en su elección.
 
-**AUTOGUIDE** es un sitio web desarrollado con el objetivo de brindar **información y orientación para la elección de automóviles**, permitiendo al usuario explorar diferentes categorías de vehículos y realizar consultas de acuerdo con sus intereses.
-
-El sitio organiza la información en distintas secciones para facilitar la navegación y presenta una propuesta visual relacionada con el sector automotor.
-
-El proyecto fue realizado como una **actividad académica de desarrollo web**, aplicando conocimientos de estructura HTML, diseño mediante CSS, navegación entre páginas, formularios y organización de archivos.
-
----
+El sitio permite explorar categorías de automóviles, conocer sus características generales y realizar una consulta mediante un formulario.
 
 ## 🎯 Objetivos
 
-Los principales objetivos del proyecto son:
-
 * Presentar información sobre diferentes tipos de automóviles.
-* Organizar los vehículos en categorías para facilitar su exploración.
-* Ofrecer una sección de asesoramiento.
-* Permitir al usuario realizar una consulta mediante un formulario.
-* Crear una navegación clara entre las diferentes páginas.
-* Aplicar conocimientos de **HTML5 y CSS3** en un proyecto web completo.
-* Mantener una estructura de archivos organizada y fácil de comprender.
+* Organizar los vehículos por categorías.
+* Brindar una sección de asesoramiento.
+* Incorporar un formulario de consulta.
+* Aplicar conocimientos de **HTML5 y CSS3**.
+* Crear una navegación clara entre las páginas.
+
+## 🚘 Categorías
+
+* 🏎️ **Deportivos**
+* 🚙 **SUVs**
+* 🚘 **Sedanes**
+
+## 📄 Páginas
+
+| Página               | Contenido               |
+| -------------------- | ----------------------- |
+| `index.html`         | Página principal        |
+| `autos.html`         | Categorías de vehículos |
+| `deportivos.html`    | Autos deportivos        |
+| `suv.html`           | SUVs                    |
+| `sedanes.html`       | Sedanes                 |
+| `asesoramiento.html` |                         |
 
----
-
-## 🚘 Categorías de vehículos
-
-AUTOGUIDE organiza los vehículos en diferentes categorías:
-
-### 🏎️ Deportivos
-
-Vehículos orientados principalmente al rendimiento, diseño y experiencia de conducción.
-
-### 🚙 SUVs
-
-Vehículos caracterizados por ofrecer mayor espacio interior, versatilidad y una posición de conducción elevada.
-
-### 🚘 Sedanes
-
-Automóviles generalmente asociados con comodidad, practicidad y un diseño orientado al uso cotidiano.
-
-Cada categoría posee una página independiente para presentar su contenido.
-
----
-
-## 📄 Secciones del sitio
-
-### 🏠 Inicio
-
-Es la página principal del proyecto. Presenta la propuesta de AUTOGUIDE y permite acceder a las diferentes secciones.
-
-### 🚘 Autos
-
-Reúne las principales categorías de vehículos disponibles dentro del sitio.
-
-### 💡 Asesoramiento
-
-Presenta información orientada a ayudar al usuario a considerar diferentes aspectos al momento de elegir un automóvil.
-
-### 👥 Nosotros
-
-Explica la propuesta de AUTOGUIDE y presenta información relacionada con el proyecto.
-
-### 📝 Consultar
-
-Incluye un formulario para que el usuario pueda proporcionar sus datos y especificar sus preferencias o necesidades relacionadas con la búsqueda de un vehículo.
-
----
-
-## 🛠️ Tecnologías y herramientas
-
-### Tecnologías
-
-* **HTML5** — utilizado para crear la estructura y el contenido de las páginas.
-* **CSS3** — utilizado para definir el diseño, estilos, distribución y presentación visual.
-
-### Herramientas
-
-* **Visual Studio Code** — utilizado como entorno de desarrollo.
-* **XAMPP** — utilizado para ejecutar y probar el sitio de manera local.
-* **Git** — utilizado para el control de versiones.
-* **GitHub** — utilizado para almacenar y gestionar el proyecto.
-
-> El proyecto está desarrollado principalmente con **HTML y CSS**, sin utilizar frameworks de desarrollo web.
-
----
-
-## 📁 Estructura del proyecto
-
-```text
-Itre-Anabella-formulario2-paginaweb/
-│
-├── index.html
-├── autos.html
-├── asesoramiento.html
-├── nosotros.html
-├── formulario.html
-│
-├── deportivos.html
-├── suv.html
-├── sedanes.html
-│
-├── styles.css
-│
-└── img/
-    └── imágenes utilizadas en el sitio
-```
-
-### Archivos principales
-
-| Archivo              | Función                                     |
-| -------------------- | ------------------------------------------- |
-| `index.html`         | Página principal                            |
-| `autos.html`         | Sección general de automóviles              |
-| `deportivos.html`    | Categoría de autos deportivos               |
-| `suv.html`           | Categoría de SUVs                           |
-| `sedanes.html`       | Categoría de sedanes                        |
-| `asesoramiento.html` | Sección de asesoramiento                    |
-| `nosotros.html`      | Información sobre AUTOGUIDE                 |
-| `formulario.html`    | Formulario de consulta                      |
-| `styles.css`         | Hoja de estilos del sitio                   |
-| `img/`               | Recursos gráficos utilizados en las páginas |
-
----
-
-## 🧭 Navegación
-
-El sitio cuenta con un menú principal que permite desplazarse entre las secciones:
-
-**Inicio · Autos · Asesoramiento · Nosotros · Consultar**
-
-Además, las tarjetas y botones incluidos en las páginas permiten acceder a contenido específico de cada categoría.
-
-La estructura de navegación fue diseñada para que las diferentes páginas estén conectadas entre sí y el usuario pueda recorrer el sitio de manera sencilla.
-
----
-
-## 📝 Formulario de consulta
-
-El proyecto incluye un formulario destinado a recopilar información relacionada con la consulta del usuario.
-
-Entre los datos que pueden solicitarse se encuentran:
-
-* Nombre.
-* Información de contacto.
-* Tipo de vehículo de interés.
-* Preferencias relacionadas con el automóvil.
-* Información adicional para la consulta.
-
-El formulario forma parte de la propuesta del sitio y representa un posible medio de contacto entre el usuario y el servicio de asesoramiento.
-
-> **Importante:** la versión actual del proyecto utiliza el formulario como parte de la interfaz del sitio. No se implementa un sistema de base de datos ni un servidor propio para almacenar las consultas.
-
----
-
-## 🎨 Diseño y experiencia de usuario
-
-El diseño de AUTOGUIDE busca representar visualmente el **sector automotor**, utilizando imágenes de vehículos, tarjetas, botones y diferentes bloques de contenido.
-
-Se priorizaron:
-
-* Una estructura clara.
-* Navegación sencilla.
-* Separación de contenidos por secciones.
-* Uso de imágenes como apoyo visual.
-* Consistencia entre las diferentes páginas.
-* Una presentación visual relacionada con la temática automotriz.
-
----
-
-## 🖥️ Ejecución local
-
-Para ejecutar el proyecto mediante XAMPP:
-
-1. Instalar y abrir **XAMPP**.
-2. Iniciar el módulo **Apache**.
-3. Ubicar la carpeta del proyecto dentro de:
-
-```text
-C:\xampp\htdocs\
-```
-
-4. Verificar que la carpeta se encuentre como:
-
-```text
-C:\xampp\htdocs\Itre-Anabella-formulario2-paginaweb\
-```
-
-5. Abrir un navegador web.
-6. Ingresar a:
-
-```text
-http://localhost/Itre-Anabella-formulario2-paginaweb/
-```
-
-7. Se cargará la página principal `index.html`.
-
----
-
-## 📚 Conocimientos aplicados
-
-Durante el desarrollo del proyecto se aplicaron conocimientos relacionados con:
-
-* Estructura básica de documentos HTML.
-* Etiquetas y elementos HTML.
-* Enlaces entre páginas.
-* Inserción y utilización de imágenes.
-* Creación de formularios.
-* Uso de clases e identificadores.
-* Aplicación de estilos mediante CSS.
-* Organización de contenido mediante secciones.
-* Diseño de tarjetas y elementos de navegación.
-* Organización de archivos y carpetas.
-* Ejecución de sitios mediante un servidor local.
-* Uso básico de Git y GitHub.
-
----
-
-## 🔄 Posibles mejoras
-
-Como posibles ampliaciones para futuras versiones se podrían incorporar:
-
-* 🔎 Sistema de búsqueda y filtros.
-* ⚖️ Comparación entre diferentes vehículos.
-* 📊 Información técnica más detallada.
-* 🚗 Mayor cantidad de marcas y modelos.
-* 📱 Mejor adaptación a diferentes tamaños de pantalla.
-* ⚙️ Funcionalidades mediante JavaScript.
-* 💾 Base de datos para almacenar consultas.
-* 📩 Sistema real de envío y recepción de formularios.
-
-Estas características **no forman parte de la versión actual** y se plantean como posibles mejoras.
-
----
-
-## 📌 Alcance actual
-
-La versión actual de AUTOGUIDE se centra en:
-
-* Presentación de información.
-* Navegación entre páginas.
-* Organización de vehículos por categorías.
-* Diseño visual mediante HTML y CSS.
-* Formulario de consulta.
-* Ejecución local mediante XAMPP.
-
-El proyecto **no incluye actualmente** un sistema de usuarios, base de datos, autenticación, filtros dinámicos ni funcionalidades desarrolladas con JavaScript.
-
----
-
-## 👤 Autor
-
-**Anabella Itre**
-
-Proyecto académico de desarrollo web.
-
----
-
-## 📊 Estado del proyecto
-
-**Estado:** 🟢 Finalizado
-
-**Versión:** 1.0
-
-AUTOGUIDE corresponde a una versión académica funcional del sitio web y puede ser ampliado posteriormente con nuevas funcionalidades y tecnologías.
-
----
-
-## 📄 Licencia
-
-Este proyecto fue desarrollado con **fines académicos y educativos**.
-
-El contenido, diseño y estructura corresponden al trabajo realizado para el proyecto de desarrollo web.
